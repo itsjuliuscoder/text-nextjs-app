@@ -1,0 +1,26 @@
+.body {
+    background-color: #fff;
+    min-height: 400px;
+    padding: 9px;
+    margin: auto;
+}
+
+.inner_body {
+    width: 65%;
+    position: relative;
+    margin: 3em auto;
+}
+.body_lower {
+    background-color: #ACBDC3;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 3em;
+}
+.body_values {
+    background-color: #F2F2F2;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 3em;
+}

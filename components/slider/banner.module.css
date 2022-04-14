@@ -1,0 +1,12 @@
+.banner {
+    background: url("../../public/images/banner.png");
+    padding: 22px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner_text {
+    margin-top: 14em !important;
+    position: relative;
+    color: #fff;
+}

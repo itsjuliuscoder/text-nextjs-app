@@ -24,3 +24,74 @@
     margin: auto;
     padding: 3em;
 }
+.body_lower_text {
+    width: 75%;
+    margin: auto;
+    position: relative;
+    color: #fff;
+}
+span.bigText {
+    font-size: 32px;
+    font-weight: 600;
+    color: #170069;
+}
+span.colored {
+    color: #26AFE6;
+}
+.col_body {
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 2em;
+}
+.team_banner {
+    background: url("../../public/images/bg.png");
+    padding: 22px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.team_banner h4 {
+    font-size: 28px;
+    margin: 1em auto;
+}
+.product_section {
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    padding: 22px;
+}
+.footer_section {
+    background-color: #C4C4C4;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+ul.footer_list_left {
+    margin: 0;
+    padding: 0;
+}
+ul.footer_list_left li {
+    display: inline;
+    color: #170069;
+    text-align: center;
+    padding: 12px 14px;
+}
+ul.footer_list_left li a {
+    text-decoration: none;
+}
+ul.footer_list_right {
+    margin: 0;
+    padding: 0;
+    list-style: circle !important;
+    float: right;
+}
+ul.footer_list_right li {
+    display: inline;
+    color: #170069;
+    text-align: center;
+    padding: 12px 14px;
+}

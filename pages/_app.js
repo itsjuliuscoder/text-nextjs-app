@@ -3,15 +3,28 @@ import Head from 'next/head';
 
 import '../styles/globals.css';
 import Layout from '../components/layout/layout';
+import IndexLayout from '../components/layout/index_layout';
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  if((router.pathname.startsWith("/about")) || (router.pathname.startsWith("/contact"))){
+    return (
+      <Layout>
+        <Head>
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+        </Head>
+        <Component {...pageProps} />
+      </Layout>
+    );
+  }
   return (
-    <Layout>
+    <IndexLayout>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <Component {...pageProps} />
-    </Layout>
+    </IndexLayout>
   );
 }
 

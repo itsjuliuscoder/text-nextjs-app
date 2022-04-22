@@ -4,9 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Logo from './logo';
-import classes from './main-navigation.module.css';
+import classes from './navigation.module.css';
 
-function MainNavigation() {
+function Navigation() {
   return (
     <header className={classes.header}>
       <Row>
@@ -27,4 +27,4 @@ function MainNavigation() {
   );
 }
 
-export default MainNavigation;
+export default Navigation;

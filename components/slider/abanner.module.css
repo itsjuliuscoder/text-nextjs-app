@@ -1,13 +1,18 @@
 .banner {
-    background: url("../../public/images/banner.png");
+    background: url("../../public/images/banner2.png");
     padding: 22px;
-    min-height: 400px;
+    min-height: 861px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .banner_text {
     margin-top: 14em !important;
     position: relative;
     color: #fff;
+}
+.btnStyle {
+    background-color: #84B4C8;
+    color: #fff;
+    width: 10%;
+    margin-left: 9px;
 }

@@ -4,10 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
-import ABanner from '../components/slider/abanner';
-import Home from '../components/index/home';
+import Banner from '../components/slider/banner';
+import About from '../components/about/about';
 
-function HomePage() {
+function AboutPage() {
   return (
     <Fragment>
       <Head>
@@ -17,10 +17,10 @@ function HomePage() {
           content='A testing nextjs web app.'
         />
       </Head>
-      <ABanner />
-      <Home />
+      <Banner />
+      <About />
     </Fragment>
   );
 }
 
-export default HomePage;
+export default AboutPage;

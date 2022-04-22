@@ -1,33 +1,21 @@
 .body {
     background-color: #fff;
-    min-height: 211px;
+    min-height: 400px;
     padding: 9px;
     margin: auto;
 }
-.body_values_inner h4 {
-    font-weight: 900;
-}
+
 .inner_body {
     width: 65%;
     position: relative;
     margin: 3em auto;
 }
-.footer_para {
-    font-weight: 900;
-    line-height: 10px;
-}
-.footer_title {
-    margin-top: 1.3em;
-    font-weight: 100;
-    margin-bottom: 1em;
-}
 .body_lower {
-    background-color: #84B4C8;
+    background-color: #ACBDC3;
     width: 100%;
     position: relative;
     margin: auto;
     padding: 3em;
-    text-align: center;
 }
 .body_values {
     background-color: #F2F2F2;
@@ -35,10 +23,6 @@
     position: relative;
     margin: auto;
     padding: 3em;
-}
-.body_values_inner {
-    margin: 5em auto;
-    position: relative;
 }
 .body_lower_text {
     width: 75%;
@@ -107,25 +91,7 @@ ul.footer_list_right {
 }
 ul.footer_list_right li {
     display: inline;
-    color: #000;
+    color: #170069;
     text-align: center;
-    font-size: 18px;
     padding: 12px 14px;
-}
-.btnStyle {
-    background-color: #84B4C8;
-    color: #fff;
-    width: 20%;
-    border: none;
-}
-.footer_section_lower {
-    background: #3D3D3D;
-    width: 100%;
-    margin: auto;
-    min-height: 50px;
-    color: #fff;
-    padding-top: 1em;
-}
-p.text__right {
-    text-align: right;
 }

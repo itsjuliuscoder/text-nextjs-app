@@ -4,108 +4,92 @@ import Container from 'react-bootstrap/Container';
 import Image from 'next/image';
 import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import classes from './home.module.css';
+import { FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 function Home() {
   return (
     <>
-        <div className={classes.body}>
-            <Container>
-              <Row>
-                  <div className={classes.inner_body}>
-                    <h2>Safely “gassing” you up</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nibh morbi commodo suspendisse pellentesque lacus. Cras convallis risus, vestibulum purus est. Dui, integer amet massa mi adipiscing nunc eget feugiat porttitor. Augue habitant eu convallis nibh sed lorem elit ut interdum. Eget malesuada mattis lacus sit. Gravida lorem a in vestibulum viverra amet eget. Mollis ac viverra ipsum eu. Tortor pellentesque cursus bibendum blandit luctus elementum proin scelerisque at. Egestas suspendisse tortor, cras facilisis vitae aliquam, placerat posuere sed. At scelerisque ultrices leo magna proin molestie aliquet faucibus sagittis. Ullamcorper sed nisl magna ullamcorper ut vitae. Consequat rutrum lorem purus.</p>
-                    <p>Alles Charis does this under two brands. <span class={classes.colored}>ALLES CHARIS GAS</span> and <span class={classes.colored}>ALLES CHARIS LOGISTICS.</span></p>
-                  </div>
-              </Row>
-            </Container>
-        </div>
         <div className={classes.body_lower}>
             <Container>
                 <Row>
                     <div className={classes.body_lower_text}>
-                        <p>From<span class={classes.bigText}>Production</span>to<span class={classes.bigText}>Distribution</span>to<span class={classes.bigText}>Retail</span>and<span class={classes.bigText}>Storage</span> the aim is the <span class={classes.bigText}>Satisfaction</span> of your needs in the most efficient way.</p>
+                        <p>To build a profitable LPG venture, that is value driven by being involved in the end to end 
+                        LPG value chain in Nigeria. To do this, we will establish excellent client service, 
+                        on time – delivery and continuous support for our team members.</p>
                     </div>
                 </Row>
             </Container>
         </div>
+        <div className={classes.body}>
+            <Container>
+              <Row>
+                  <div className={classes.inner_body}>
+                    <p>Alles Charis Logistics (Abuja)        <span class={classes.bigText}>1500mT</span></p>
+                  </div>
+              </Row>
+            </Container>
+        </div>
         <div className={classes.body_values}>
             <Container>
+                <Row>
+                    <h2 className="text-center">About Us</h2>
+                </Row>
                 <Row className={classes.body_values_inner}>
-                    <Col xs={12} md={4}>
-                        <h4>Our Values</h4>
-                        <p>Alles Charis was established to be an end to end LPG company which handles everything from production to retailing of LPG in Nigeria.</p>
+                    <Col xs={12} md={6}>
+                        <h4>Alles Charis Gas</h4>
+                        <p>Alles Charis Gas Limited is an end-to-end provider of gas products, solutions, and services. We leverage industry expertise with our cutting-edge technical mastery in building excellent transition of Liquified Petroleum Gas (LPG) and other gases from production to satisfaction while ensuring safety, quality, precision, and fulfillment.
+                        ACGL is incorporated in Nigeria under the Companies and Allied Matters Act of 1990. The company aspires to takeover at least 10% of the market share in 10 years by thriving as a player in all phases of the LPG supply chain in Nigeria.</p>
+                        <Button className={classes.btnStyle}>Read More</Button>
                     </Col>
-                    <Col xs={12} md={8}>
-                        <Row>
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Efficiency</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/efficiency.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Dependability</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/hand-shake 1.png' width="80" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Integrity</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/libra-svgrepo-com 1.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Respect</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/prize-svgrepo-com 1.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Innovation</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/invention-svgrepo-com 1.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                
-                            </Col>
-                        </Row>
+                    <Col xs={12} md={6}>
+                        <Image src='/images/icon.png' width="494" height="281" alt="image icon" />                        
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+        <div className={classes.body}>
+            <Container>
+                <Row className='mt-3'>
+                    <h2 className="text-center">What We Do</h2>
+                </Row>
+                <Row className={classes.body_values_inner}>
+                    <Col xs={12} md={6}>
+                        <h4>PRODUCTION</h4>
+                        <p>With industry expertise and experience we have created a partnership with GREEN ENERGY INTERNATIONAL LIMITED to produce LPG and propane cylinder. This allows us to be a key player in the production phase of LPG.</p>
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <Image src='/images/icon.png' width="494" height="281" alt="image icon" />                        
+                    </Col>
+                </Row>
+                <Row className={classes.body_values_inner}>
+                    <Col xs={12} md={6}>
+                        <Image src='/images/icon.png' width="494" height="281" alt="image icon" />                        
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <h4>DISTRIBUTION</h4>
+                        <p>With industry certified Bridgers we intend to carry LPG from the production field to our different storage facility across the country. We will also help our clients carry from coastal or inland facilities over long distances. Our 
+                        Bob-Tails will be used for short distance distribution and logistics.
+                        We have covered over 1.3 million Kilometers, so far.</p>
+                    </Col>
+                </Row>
+                <Row className={classes.body_values_inner}>
+                    <Col xs={12} md={6}>
+                        <h4>STORAGE</h4>
+                        <p>We have built storage facilities across the nation to ease the distribution of LPG. Adherence to safety standards and in time delivery will ensure customer satisfaction.</p>
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <Image src='/images/icon.png' width="494" height="281" alt="image icon" />                        
+                    </Col>
+                </Row>
+                <Row className={classes.body_values_inner}>
+                    <Col xs={12} md={6}>
+                        <Image src='/images/icon.png' width="494" height="281" alt="image icon" />                        
+                    </Col>
+                    <Col xs={12} md={6}>
+                        <h4>RETAIL</h4>
+                        <p>To be truly end to end, we will serve end users for personal or commercial use. The satisfaction of the end user is our goal.</p>
                     </Col>
                 </Row>
             </Container>
@@ -113,10 +97,11 @@ function Home() {
         <div className={classes.team_banner}>
             <Container>
                 <Row className='mt-4'>
-                    <h4>Management Team</h4>
-                    <p>With a world-class team of visionaries with records in leadership and problem solving, the company has great mind assets always focused on breaking new ground with both long and short term goals.</p>
+                    <h4>Company Profile</h4>
+                    <p>Alles Charis Gas limited was founded in February 2018, to close the vacuum that could be found in the supply chain of the gas industry in Nigeria.
+                    This means that the company fulfils the needs of every level of consumer that may need gas products by offering a range of products and services from bulk sales, logistics, storage, wholesale, retail, project management and installations of engineering equipment.</p>
                     {/* <Link href="#" className="btn btn-default mt-2">Welcome</Link> */}
-                    <button style={{ width: '15%', backgroundColor: '#84B4C8' }} type="button" className='btn btn-md mt-2'>Meet the Team</button>
+                    <button style={{ width: '15%', backgroundColor: '#84B4C8', marginLeft: '8px' }} type="button" className='btn btn-md mt-2'>Company Profile</button>
                 </Row>
             </Container>
         </div>
@@ -125,21 +110,23 @@ function Home() {
                 <Row>
                     <Container>
                         <Row className="mt-3">
-                            <h4 className='mb-3'>Products</h4>
                             <Col xs={12} md={4}>
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
-                                <h5 className='mt-3'>Our Stations</h5>
-                                <p className='mt-2'>Need gas? With storage facilities of over 1500 tonnes, check out our <span className={classes.colored}>Station Locator</span> to find the nearest station to you.</p>
+                                <h4 className={classes.footer_title}>About Us</h4>
+                                <p className={classes.footer_para}>Olusegun Adegbulugbe</p>
+                                <p className={classes.footer_para}>Our Team</p>
                             </Col>
                             <Col xs={12} md={4}>
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
-                                <h5 className='mt-3'>Company Profile</h5>
-                                <p className='mt-2'>Interested in our story, read our <span className={classes.colored}>Company Profile</span> to find out more or <span className={classes.colored}>Contact Us.</span></p>
+                                <h4 className={classes.footer_title}>Services</h4>
+                                <p className={classes.footer_para}>Operations</p>
+                                <p className={classes.footer_para}>Operations</p>
                             </Col>
                             <Col xs={12} md={4}>
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
-                                <h5 className='mt-3'>Our Stations</h5>
-                                <p className='mt-2'>Need gas? With storage facilities of over 1500 tonnes, check out our <span className={classes.colored}>Station Locator</span> to find the nearest station to you.</p>
+                                <h4 className={classes.footer_title}>Contact</h4>
+                                <p className={classes.footer_para}>Contact Details</p>
+                                <p className={classes.footer_para}>Careers Opportunities</p>
                             </Col>
                         </Row>
                     </Container>
@@ -160,19 +147,34 @@ function Home() {
                     <Col xs={12} md={7}>
                         <ul className={classes.footer_list_right}>
                             <li>
-                                <Image src='/images/facebook.png' width="40" height="40" />
+                               <FaFacebookSquare />
                             </li>
                             <li>
-                                <Image src='/images/instagram.png' width="40" height="40" />
+                                <FaTwitter />
                             </li>
                             <li>
-                                <Image src='/images/youtube.png' width="40" height="40" />
+                                <FaLinkedin />
+                            </li>
+                            <li>
+                                <FaYoutube />
                             </li>
                         </ul>
                     </Col>
                 </Row>
             </Container>
         </div>
+        <div className={classes.footer_section_lower}>
+            <Container>
+                <Row>
+                    <Col xs={12} md={8}>
+                        
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <p className={classes.text__right}>Copyright 2022 Alles Charis Gas. All rights reserved</p>
+                    </Col>
+                </Row>
+            </Container>
+        </div> 
     </>
   );
 }

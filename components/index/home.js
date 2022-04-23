@@ -26,7 +26,7 @@ function Home() {
             <Container>
               <Row>
                   <div className={classes.inner_body}>
-                    <p>Alles Charis Logistics (Abuja)        <span class={classes.bigText}>1500mT</span></p>
+                    <p>Alles Charis Logistics (Abuja)        <span className={classes.bigText}>1500mT</span></p>
                   </div>
               </Row>
             </Container>

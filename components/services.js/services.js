@@ -1,16 +1,23 @@
 import { Fragment } from 'react';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
-import classes from './about.module.css';
+import classes from './services.module.css';
 import { FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 
-function About() {
+function Services() {
   return (
     <>
+        <div className={classes.banner}>
+          <Container>
+              <Row className={classes.banner_text}>
+                  <h3>Our Team</h3>
+                  <p>With a Management Team with a proven track record of excellence and people development, the high quality of decision makers leading the company gives assurance of quality decision making and exceptional business development.</p>
+              </Row>
+          </Container>
+        </div>
         <div className={classes.body}>
             <Container>
               <Row>
@@ -22,103 +29,13 @@ function About() {
               </Row>
             </Container>
         </div>
-        <div className={classes.body_lower}>
-            <Container>
-                <Row>
-                    <div className={classes.body_lower_text}>
-                        <p>From<span className={classes.bigText}>Production</span>to<span className={classes.bigText}>Distribution</span>to<span className={classes.bigText}>Retail</span>and<span className={classes.bigText}>Storage</span> the aim is the <span className={classes.bigText}>Satisfaction</span> of your needs in the most efficient way.</p>
-                    </div>
-                </Row>
-            </Container>
-        </div>
-        <div className={classes.body_values}>
-            <Container>
-                <Row className={classes.body_values_inner}>
-                    <Col xs={12} md={4}>
-                        <h4>Our Values</h4>
-                        <p>Alles Charis was established to be an end to end LPG company which handles everything from production to retailing of LPG in Nigeria.</p>
-                    </Col>
-                    <Col xs={12} md={8}>
-                        <Row>
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Efficiency</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/efficiency.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Dependability</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/hand-shake 1.png' width="80" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Integrity</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/libra-svgrepo-com 1.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Respect</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/prize-svgrepo-com 1.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col xs={12} md={6}>
-                                <div className={classes.col_body}>
-                                    <Row>
-                                        <Col xs={12} md={9}>
-                                            <h5 className='mt-3 ml-2'>Innovation</h5>
-                                        </Col>
-                                        <Col xs={12} md={3}>
-                                            <Image src='/images/invention-svgrepo-com 1.png' width="50" height="50" alt="efficiency" />
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
         <div className={classes.team_banner}>
             <Container>
                 <Row className='mt-4'>
                     <h4>Management Team</h4>
                     <p>With a world-class team of visionaries with records in leadership and problem solving, the company has great mind assets always focused on breaking new ground with both long and short term goals.</p>
                     {/* <Link href="#" className="btn btn-default mt-2">Welcome</Link> */}
-                    <button style={{ width: '15%', backgroundColor: '#84B4C8' }} className='btn btn-md mt-2 textDec'><Link href="/team">Learn More</Link></button>
+                    <button style={{ width: '15%', backgroundColor: '#84B4C8' }} type="button" className='btn btn-md mt-2'>Meet the Team</button>
                 </Row>
             </Container>
         </div>
@@ -194,4 +111,4 @@ function About() {
   );
 }
 
-export default About;
+export default Services;

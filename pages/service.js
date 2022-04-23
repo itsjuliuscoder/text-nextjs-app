@@ -4,23 +4,21 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
-import Banner from '../components/slider/banner';
-import About from '../components/about/about';
+import Services from '../components/services.js/services';
 
-function AboutPage() {
+function ServicesPage() {
   return (
     <Fragment>
       <Head>
-        <title>About Us - Alles Charis</title>
+        <title>Service - Alles Charis</title>
         <meta
           name='description'
           content='A testing nextjs web app.'
         />
       </Head>
-      <Banner />
-      <About />
+      <Services />
     </Fragment>
   );
 }
 
-export default AboutPage;
+export default ServicesPage;

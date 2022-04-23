@@ -5,22 +5,20 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
 import Banner from '../components/slider/banner';
-import About from '../components/about/about';
 
-function AboutPage() {
+function GalleryPage() {
   return (
     <Fragment>
       <Head>
-        <title>About Us - Alles Charis</title>
+        <title>Gallery - Alles Charis</title>
         <meta
           name='description'
           content='A testing nextjs web app.'
         />
       </Head>
       <Banner />
-      <About />
     </Fragment>
   );
 }
 
-export default AboutPage;
+export default GalleryPage;

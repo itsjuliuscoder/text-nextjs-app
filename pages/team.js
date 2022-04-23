@@ -5,22 +5,21 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
 import Banner from '../components/slider/banner';
-import About from '../components/about/about';
+import Team from '../components/team/team';
 
-function AboutPage() {
+function TeamPage() {
   return (
     <Fragment>
       <Head>
-        <title>About Us - Alles Charis</title>
+        <title>Team - Alles Charis</title>
         <meta
           name='description'
           content='A testing nextjs web app.'
         />
       </Head>
-      <Banner />
-      <About />
+      <Team />
     </Fragment>
   );
 }
 
-export default AboutPage;
+export default TeamPage;

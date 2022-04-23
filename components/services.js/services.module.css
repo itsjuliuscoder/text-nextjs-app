@@ -5,6 +5,20 @@
     margin: auto;
 }
 
+.banner {
+    background: url("../../public/images/services.png");
+    padding: 22px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner_text {
+    margin-top: 14em !important;
+    position: relative;
+    color: #fff;
+}
+
 .inner_body {
     width: 65%;
     position: relative;
@@ -43,8 +57,6 @@ span.colored {
     width: 100%;
     margin: auto;
     padding: 2em;
-    border-top: 5px solid #3FA2D2;
-    border-radius: 7px 7px 0px 0px;
 }
 .team_banner {
     background: url("../../public/images/bg.png");

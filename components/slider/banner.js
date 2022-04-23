@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import classes from './banner.module.css';
 
-function Banner(data) {
+function Banner() {
   return (
     <>
       <div className={classes.banner}>

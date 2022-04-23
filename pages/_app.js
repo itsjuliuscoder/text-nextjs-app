@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  if((router.pathname.startsWith("/about")) || (router.pathname.startsWith("/contact"))){
+  if((router.pathname.startsWith("/about")) || (router.pathname.startsWith("/contact")) || (router.pathname.startsWith("/team"))){
     return (
       <Layout>
         <Head>

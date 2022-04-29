@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
-import Services from '../components/services.js/services';
+import Services from '../components/services/services';
 
 function ServicesPage() {
   return (

@@ -1,73 +1,168 @@
-.contact {
-  margin: var(--size-8) auto;
-  border-radius: 6px;
-  background-color: var(--color-grey-100);
-  width: 90%;
-  max-width: 50rem;
-  padding: var(--size-4);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  font-size: var(--size-6);
+.body {
+  background-color: #fff;
+  min-height: 400px;
+  padding: 9px;
+  margin: auto;
+}
+.body a {
+  color: #170069 !important;
+  font-weight: 700;
 }
 
-.contact h1 {
-  font-size: var(--size-8);
-  margin: var(--size-4) 0;
-  text-align: left;
+.banner {
+  background-image: 
+            linear-gradient(89.82deg, 
+                rgba(20, 7, 7, 0.78) 0.17%, 
+                    rgba(49, 93, 145, 0.38) 97.17%), url(
+                        '../../public/images/contact.png'); 
+  padding: 22px;
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.form label {
-  display: block;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  margin: var(--size-2) 0 var(--size-1) 0;
+.banner_text {
+  margin-top: 14em !important;
+  position: relative;
+  color: #fff;
 }
 
-.form input,
-.form textarea {
-  font: inherit;
-  padding: var(--size-1);
-  border-radius: 4px;
+.inner_body {
+  width: 65%;
+  position: relative;
+  margin: 3em auto;
+}
+.body_lower {
+  background-color: #ACBDC3;
   width: 100%;
-  border: 1px solid var(--color-grey-400);
-  background-color: var(--color-grey-50);
-  resize: none;
+  position: relative;
+  margin: auto;
+  padding: 3em;
 }
-
-.controls {
-  display: flex;
-  column-gap: 1rem;
-  flex-wrap: wrap;
+.body_values {
+  background-color: #F2F2F2;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 3em;
 }
-
-.control {
-  flex: 1;
-  min-width: 10rem;
+.body_lower_text {
+  width: 75%;
+  margin: auto;
+  position: relative;
+  color: #fff;
 }
-
-.actions {
-  margin-top: var(--size-4);
+span.bigText {
+  font-size: 32px;
+  font-weight: 600;
+  color: #170069;
+}
+span.colored {
+  color: #26AFE6;
+}
+.col_body {
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+}
+.team_banner {
+  background: url("../../public/images/bg.png");
+  padding: 22px;
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.team_banner h4 {
+  font-size: 28px;
+  margin: 1em auto;
+}
+.product_section {
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  padding: 22px;
+}
+.footer_section_upper {
+  background-color: #EAEAEA;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+.footer_section {
+  background-color: #C4C4C4;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+ul.footer_list_left {
+  margin: 0;
+  padding: 0;
+}
+ul.footer_list_left li {
+  display: inline;
+  color: #170069;
+  text-align: center;
+  padding: 12px 14px;
+}
+ul.footer_list_left li a {
+  text-decoration: none;
+}
+ul.footer_list_right {
+  margin: 0;
+  padding: 0;
+  list-style: circle !important;
+  float: right;
+}
+ul.footer_list_right li {
+  display: inline;
+  color: #170069;
+  text-align: center;
+  padding: 12px 14px;
+}
+.footer_section_lower {
+  background: #3D3D3D;
+  width: 100%;
+  margin: auto;
+  min-height: 50px;
+  color: #fff;
+  padding-top: 1em;
+}
+p.text__right {
   text-align: right;
 }
-
-.form button {
-  font: inherit;
-  cursor: pointer;
-  background-color: var(--color-primary-700);
-  border: 1px solid var(--color-primary-700);
-  padding: var(--size-2) var(--size-4);
+.formGroup {
+  margin: 22px auto;
+  position: relative;
+}
+.formGroup input {
+  width: 100%;
+  border: 0.5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 8px;
+}
+.formGroup input[type="submit"] {
+  width: 30%;
+  float: right;
+  padding: 9px;
+  background-color: #75B9D5;
+  border: none;
   border-radius: 4px;
-  color: var(--color-primary-50);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
-
-.form button:hover {
-  background-color: var(--color-primary-500);
-  border-color: var(--color-primary-500);
+a.linkRef {
+  color: #170069 !important;
 }
-
-@media (min-width: 768px) {
-  .contact h1 {
-    font-size: var(--size-16);
-    text-align: center;
-  }
+.textArea {
+  min-height: 300px;
+  width: 100%;
+}
+.icon_style {
+  font-size: 2.5em;
+  font-weight: 200;
 }

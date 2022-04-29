@@ -11,15 +11,15 @@ function Navigation() {
     <header className={classes.header}>
       <Row>
         <Col xs={12} md={3}>
-            <Image src='/images/logo.png' alt="logo" />
+            <Image src='/images/logo.png' alt="logo" className="mt-3" />
         </Col>
         <Col xs={12} md={9}>
             <ul>
               <li><Link href="/about">ABOUT US</Link></li>
-              <li><Link href="">SERVICES</Link></li>
+              <li><Link href="/service">SERVICES</Link></li>
               <li><Link href="">LOCATIONS</Link></li>
               <li><Link href="">BLOG & MEDIA</Link></li>
-              <li><Link href="">CONTACT</Link></li>
+              <li><Link href="/contact">CONTACT</Link></li>
             </ul>
         </Col>
       </Row>

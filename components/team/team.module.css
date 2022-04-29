@@ -17,6 +17,15 @@
     background-repeat: no-repeat;
 }
 
+.team_banner {
+    background: url("../../public/images/bg.png");
+    padding: 22px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
 .banner_text {
     margin-top: 14em !important;
     position: relative;

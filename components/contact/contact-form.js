@@ -1,140 +1,195 @@
-import { useState, useEffect } from 'react';
-
+import { Fragment } from 'react';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Image from 'next/image';
+import Link from 'next/link';
+import Col from 'react-bootstrap/Col';
 import classes from './contact-form.module.css';
-import Notification from '../ui/notification';
-
-async function sendContactData(contactDetails) {
-  const response = await fetch('/api/contact', {
-    method: 'POST',
-    body: JSON.stringify(contactDetails),
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(data.message || 'Something went wrong!');
-  }
-}
+import { FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FiMapPin, FiMail, FiPhoneCall } from "react-icons/fi";
 
 function ContactForm() {
-  const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredName, setEnteredName] = useState('');
-  const [enteredMessage, setEnteredMessage] = useState('');
-  const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
-  const [requestError, setRequestError] = useState();
-
-  useEffect(() => {
-    if (requestStatus === 'success' || requestStatus === 'error') {
-      const timer = setTimeout(() => {
-        setRequestStatus(null);
-        setRequestError(null);
-      }, 3000);
-
-      return () => clearTimeout(timer);
-    }
-  }, [requestStatus]);
-
-  async function sendMessageHandler(event) {
-    event.preventDefault();
-
-    // optional: add client-side validation
-
-    setRequestStatus('pending');
-
-    try {
-      await sendContactData({
-        email: enteredEmail,
-        name: enteredName,
-        message: enteredMessage,
-      });
-      setRequestStatus('success');
-      setEnteredMessage('');
-      setEnteredEmail('');
-      setEnteredName('');
-    } catch (error) {
-      setRequestError(error.message);
-      setRequestStatus('error');
-    }
-  }
-
-  let notification;
-
-  if (requestStatus === 'pending') {
-    notification = {
-      status: 'pending',
-      title: 'Sending message...',
-      message: 'Your message is on its way!',
-    };
-  }
-
-  if (requestStatus === 'success') {
-    notification = {
-      status: 'success',
-      title: 'Success!',
-      message: 'Message sent successfully!',
-    };
-  }
-
-  if (requestStatus === 'error') {
-    notification = {
-      status: 'error',
-      title: 'Error!',
-      message: requestError,
-    };
-  }
-
   return (
-    <section className={classes.contact}>
-      <h1>How can I help you?</h1>
-      <form className={classes.form} onSubmit={sendMessageHandler}>
-        <div className={classes.controls}>
-          <div className={classes.control}>
-            <label htmlFor='email'>Your Email</label>
-            <input
-              type='email'
-              id='email'
-              required
-              value={enteredEmail}
-              onChange={(event) => setEnteredEmail(event.target.value)}
-            />
-          </div>
-          <div className={classes.control}>
-            <label htmlFor='name'>Your Name</label>
-            <input
-              type='text'
-              id='name'
-              required
-              value={enteredName}
-              onChange={(event) => setEnteredName(event.target.value)}
-            />
-          </div>
-        </div>
-        <div className={classes.control}>
-          <label htmlFor='message'>Your Message</label>
-          <textarea
-            id='message'
-            rows='5'
-            required
-            value={enteredMessage}
-            onChange={(event) => setEnteredMessage(event.target.value)}
-          ></textarea>
-        </div>
+    <>
+        <div className={classes.banner}>
+          <Container>
+              <Row className={classes.banner_text}>
+                  <Col xs={12} md={8}>
+                    <h3>Contact</h3>
+                    <p>Want to reach out to us? Visit us at our office or contact us through any of the media below and we’ll answer your questions and Enquiries.</p>
+                  </Col>
+                  <Col xs={12} md={4}>
 
-        <div className={classes.actions}>
-          <button>Send Message</button>
+                  </Col>
+              </Row>
+          </Container>
         </div>
-      </form>
-      {notification && (
-        <Notification
-          status={notification.status}
-          title={notification.title}
-          message={notification.message}
-        />
-      )}
-    </section>
+        <div className={classes.body}>
+            <Container>
+                <Row className="mt-3">
+                    <h5>Contact</h5>
+                    <h5>Careers</h5>
+                </Row>
+                <hr />
+                <Row>
+                  <Col xs={12} md={8}>
+                    <h4>Contact Details</h4>
+                    <Row>
+                      <Col xs={12} md={1} className="mt-2">
+                          <FiMapPin className={classes.icon_style} />
+                      </Col>
+                      <Col xs={12} md={8} className="mt-2">
+                          <p>House 28, B39 close, CITEC Estate, Jabi, Airport Road, Mbora District, FCT Abuja, Nigeria.</p>
+                      </Col>
+                    </Row>
+                    <Row className="mt-2">
+                      <Col xs={12} md={1} className="mt-2">
+                          <FiMail className={classes.icon_style} />
+                      </Col>
+                      <Col xs={12} md={8} className="mt-2">
+                          <p>info@allescharis.ng</p>
+                      </Col>
+                    </Row>
+                    <Row className="mt-2">
+                      <Col xs={12} md={1} className="mt-2">
+                          <FiPhoneCall className={classes.icon_style} />
+                      </Col>
+                      <Col xs={12} md={8} className="mt-2">
+                          <p>+234 (0) 702 5530 076</p>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col xs={12} md={4}>
+                    <h4>Contact Form</h4>
+                    <div className={classes.formGroup}>
+                      <h5>Name: </h5>
+                      <input type='text' name="name" />
+                    </div>
+                    <div className={classes.formGroup}>
+                      <h5>Email: </h5>
+                      <input type='text' name="name" />
+                    </div>
+                    <div className={classes.formGroup}>
+                      <h5>Message: </h5>
+                      <textarea className={classes.textArea}></textarea>
+                    </div>
+                    <div className={classes.formGroup}>
+                      <input type="submit" name="Submit" value="Submit" />
+                    </div>
+                  </Col>
+                </Row>
+                <Row className="mt-4 mb-4">
+                  <h4>Alles Careers</h4>
+                  <Col xs={12} md={8}>
+                    <p>Interested in working for Us? Check Out any of the Open Positions below, send in your details and we’ll get back to you.</p>
+                    <Link href="/">No current opening</Link>
+                  </Col>
+                  <Col xs={12} md={4}>
+                    
+                  </Col>
+                </Row>
+            </Container>
+        </div>
+        <div className={classes.team_banner}>
+            <Container>
+                <Row className='mt-4'>
+                    <h4>Management Team</h4>
+                    <p>With a world-class team of visionaries with records in leadership and problem solving, the company has great mind assets always focused on breaking new ground with both long and short term goals.</p>
+                    {/* <Link href="#" className="btn btn-default mt-2">Welcome</Link> */}
+                    <button style={{ width: '15%', backgroundColor: '#84B4C8' }} className='btn btn-md mt-2 textDec'><Link href="/team">Learn More</Link></button>
+                </Row>
+            </Container>
+        </div>
+        <div className={classes.product_section}>
+            <Container>
+                <Row>
+                    <Container>
+                        <Row className="mt-3">
+                            <h4 className='mb-3'>Products</h4>
+                            <Col xs={12} md={4}>
+                                <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
+                                <h5 className='mt-3'>Our Stations</h5>
+                                <p className='mt-2'>Need gas? With storage facilities of over 1500 tonnes, check out our <span className={classes.colored}>Station Locator</span> to find the nearest station to you.</p>
+                            </Col>
+                            <Col xs={12} md={4}>
+                                <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
+                                <h5 className='mt-3'>Company Profile</h5>
+                                <p className='mt-2'>Interested in our story, read our <span className={classes.colored}>Company Profile</span> to find out more or <span className={classes.colored}>Contact Us.</span></p>
+                            </Col>
+                            <Col xs={12} md={4}>
+                                <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
+                                <h5 className='mt-3'>Our Stations</h5>
+                                <p className='mt-2'>Need gas? With storage facilities of over 1500 tonnes, check out our <span className={classes.colored}>Station Locator</span> to find the nearest station to you.</p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Row>
+            </Container>
+        </div>
+        <div className={classes.footer_section_upper}>
+            <Container>
+                <Row className="mt-3">
+                    <Col xs={12} md={4}>
+                        <h4>About Us</h4>
+                        <p>Olusegun Adegbulugbe</p>
+                        <p>Our Team</p>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <h4>Services</h4>
+                        <p>Operations</p>
+                        <p>Station Locator</p>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <h4>Contact</h4>
+                        <p>Contact Details</p>
+                        <p>Career Opportunities</p>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+        <div className={classes.footer_section}>
+            <Container>
+                <Row className="mt-3">
+                    <Col xs={12} md={5}>
+                        <ul className={classes.footer_list_left}>
+                            <li>Contact Us</li>
+                            <li>Gallery</li>
+                            <li>Careers</li>
+                            <li>Gallery</li>
+                        </ul>
+                    </Col>
+                    <Col xs={12} md={7}>
+                        <ul className={classes.footer_list_right}>
+                            <li>
+                               <FaFacebookSquare />
+                            </li>
+                            <li>
+                                <FaTwitter />
+                            </li>
+                            <li>
+                                <FaLinkedin />
+                            </li>
+                            <li>
+                                <FaYoutube />
+                            </li>
+                        </ul>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+        <div className={classes.footer_section_lower}>
+            <Container>
+                <Row>
+                    <Col xs={12} md={8}>
+                        
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <p className={classes.text__right}>Copyright 2022 Alles Charis Gas. All rights reserved</p>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    </>
   );
 }
 

@@ -13,6 +13,7 @@
 .btnStyle {
     background-color: #84B4C8;
     color: #fff;
-    width: 10%;
-    margin-left: 9px;
+    width: 50%;
+    border: none;
+    padding: 9px;
 }

@@ -6,7 +6,11 @@
 }
 
 .banner {
-    background: url("../../public/images/gallery.png");
+    background-image: 
+            linear-gradient(89.82deg, 
+                rgba(20, 7, 7, 0.78) 0.17%, 
+                    rgba(49, 93, 145, 0.38) 97.17%), url(
+                        '../../public/images/services.png');  
     padding: 22px;
     min-height: 400px;
     background-size: cover;
@@ -77,13 +81,6 @@ span.colored {
     width: 100%;
     padding: 22px;
 }
-.footer_section_upper {
-    background-color: #EAEAEA;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    padding: 15px;
-}
 .footer_section {
     background-color: #C4C4C4;
     margin: auto;
@@ -126,4 +123,18 @@ ul.footer_list_right li {
 }
 p.text__right {
     text-align: right;
+}
+.service_row {
+    width: 100%;
+    margin: 2em auto;
+
+}
+.service_row h3 {
+    font-size: 32px;
+    font-weight: 100;
+}
+.service_row h5 {
+    font-size: 16px;
+    line-height: 32px;
+    color: #170069;
 }

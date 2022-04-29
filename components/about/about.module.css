@@ -10,6 +10,9 @@
     position: relative;
     margin: 3em auto;
 }
+.inner_body h2 {
+    font-family: "Nexa-Regular";
+}
 .body_lower {
     background-color: #ACBDC3;
     width: 100%;

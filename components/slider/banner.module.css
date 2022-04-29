@@ -14,3 +14,7 @@
     position: relative;
     color: #fff;
 }
+
+.banner_text h3 {
+    font-family: 'Nexa-Regular';
+}

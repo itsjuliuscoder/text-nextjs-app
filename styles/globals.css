@@ -3,14 +3,27 @@
   src: local("Nexa"),
     url("../fonts/Nexa-Trial-Light.ttf");
 }
+
+@font-face {
+  font-family: "Nexa-Regular";
+  src: local("Nexa"),
+    url("../fonts/Nexa-Trial-Regular.ttf");
+}
 * {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "Nexa-Light";
 }
 
+p {
+  font-family: "Nexa-Light";
+}
+
+li {
+  font-family: "Nexa-Regular";
+}
 
 body {
   --color-grey-50: hsl(265, 55%, 96%);

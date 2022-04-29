@@ -10,6 +10,9 @@
     position: relative;
     color: #fff;
 }
+.banner_text h3 {
+    font-family: 'Nexa-Regular';
+}
 .btnStyle {
     background-color: #84B4C8;
     color: #fff;

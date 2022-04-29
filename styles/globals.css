@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
-
+@font-face {
+  font-family: "Nexa-Light";
+  src: local("Nexa"),
+    url("../fonts/Nexa-Trial-Light.ttf");
+}
 * {
   box-sizing: border-box;
 }
+
+h1, h2, h3, h4 {
+  font-family: "Nexa-Light";
+}
+
 
 body {
   --color-grey-50: hsl(265, 55%, 96%);

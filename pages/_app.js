@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Head from 'next/head';
 
-import '../styles/globals.css';
 import Layout from '../components/layout/layout';
 import IndexLayout from '../components/layout/index_layout';
+
 import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {

@@ -16,7 +16,11 @@
 .btnStyle {
     background-color: #84B4C8;
     color: #fff;
-    width: 50%;
+    width: 30%;
     border: none;
     padding: 9px;
+}
+.btnStyle:hover {
+    background-color: #84B4C8;
+    color: #fff;
 }

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
 import classes from './team.module.css';
-import { FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Team() {
   return (
@@ -111,17 +111,19 @@ function Team() {
                     <Col xs={12} md={7}>
                         <ul className={classes.footer_list_right}>
                             <li>
-                               <FaFacebookSquare />
+                               <li>
+                                <Link href="https://instagram.com/allescharis" passHref><a target="_blank" rel="noopener"><FaInstagram /></a></Link>
+                            </li>
                             </li>
                             <li>
-                                <FaTwitter />
+                                <Link href="https://twitter.com/allescharis" passHref><a target="_blank" rel="noopener"><FaTwitter /></a></Link>
                             </li>
                             <li>
-                                <FaLinkedin />
+                                <li>
+                                <Link href="https://www.linkedin.com/company/alles-charis/" passHref><a target="_blank" rel="noopener"><FaLinkedin /></a></Link>
                             </li>
-                            <li>
-                                <FaYoutube />
                             </li>
+                            
                         </ul>
                     </Col>
                 </Row>

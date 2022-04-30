@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
 import classes from './about.module.css';
-import { FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function About() {
   return (
@@ -118,7 +118,7 @@ function About() {
                     <h4>Management Team</h4>
                     <p>With a world-class team of visionaries with records in leadership and problem solving, the company has great mind assets always focused on breaking new ground with both long and short term goals.</p>
                     {/* <Link href="#" className="btn btn-default mt-2">Welcome</Link> */}
-                    <button style={{ width: '15%', backgroundColor: '#84B4C8' }} className='btn btn-md mt-2 textDec'><Link href="/team">Learn More</Link></button>
+                    <Link href="/team" passHref={true}><button style={{ width: '15%', backgroundColor: '#84B4C8' }} className='btn btn-md mt-2 textDec'>Meet the Team</button></Link>
                 </Row>
             </Container>
         </div>
@@ -162,17 +162,17 @@ function About() {
                     <Col xs={12} md={7}>
                         <ul className={classes.footer_list_right}>
                             <li>
-                               <FaFacebookSquare />
+                                <Link href="https://instagram.com/allescharis" passHref><a target="_blank" rel="noopener"><FaInstagram /></a></Link>
                             </li>
                             <li>
-                                <FaTwitter />
+                                <Link href="https://twitter.com/allescharis" passHref><a target="_blank" rel="noopener"><FaTwitter /></a></Link>
                             </li>
                             <li>
-                                <FaLinkedin />
+                                <li>
+                                <Link href="https://www.linkedin.com/company/alles-charis/" passHref><a target="_blank" rel="noopener"><FaLinkedin /></a></Link>
                             </li>
-                            <li>
-                                <FaYoutube />
                             </li>
+                            
                         </ul>
                     </Col>
                 </Row>

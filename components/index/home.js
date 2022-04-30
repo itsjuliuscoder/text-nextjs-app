@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import classes from './home.module.css';
-import { FaFacebookSquare, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitter, FaLinkedin, FaInstagram  } from "react-icons/fa";
 
 function Home() {
   return (
@@ -101,7 +101,7 @@ function Home() {
                     <p>Alles Charis Gas limited was founded in February 2018, to close the vacuum that could be found in the supply chain of the gas industry in Nigeria.
                     This means that the company fulfils the needs of every level of consumer that may need gas products by offering a range of products and services from bulk sales, logistics, storage, wholesale, retail, project management and installations of engineering equipment.</p>
                     {/* <Link href="#" className="btn btn-default mt-2">Welcome</Link> */}
-                    <button style={{ width: '15%', backgroundColor: '#84B4C8', marginLeft: '8px' }} type="button" className='btn btn-md mt-2'>Company Profile</button>
+                    <button style={{ width: '15%', backgroundColor: '#84B4C8', marginLeft: '8px' }} type="button" className='btn btn-md mt-2'><a target="_blank" rel="noopener" href="/assets/alles_charis_company_profile.pdf">Company Profile</a></button>
                 </Row>
             </Container>
         </div>
@@ -113,7 +113,7 @@ function Home() {
                             <Col xs={12} md={4}>
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
                                 <h4 className={classes.footer_title}>About Us</h4>
-                                <p className={classes.footer_para}>Olusegun Adegbulugbe</p>
+                                <p className={classes.footer_para}>Who We Are</p>
                                 <p className={classes.footer_para}>Our Team</p>
                             </Col>
                             <Col xs={12} md={4}>
@@ -147,17 +147,17 @@ function Home() {
                     <Col xs={12} md={7}>
                         <ul className={classes.footer_list_right}>
                             <li>
-                               <FaFacebookSquare />
+                                <Link href="https://instagram.com/allescharis" passHref><a target="_blank" rel="noopener"><FaInstagram /></a></Link>
                             </li>
                             <li>
-                                <FaTwitter />
+                                <Link href="https://twitter.com/allescharis" passHref><a target="_blank" rel="noopener"><FaTwitter /></a></Link>
                             </li>
                             <li>
-                                <FaLinkedin />
+                                <li>
+                                <Link href="https://www.linkedin.com/company/alles-charis/" passHref><a target="_blank" rel="noopener"><FaLinkedin /></a></Link>
                             </li>
-                            <li>
-                                <FaYoutube />
                             </li>
+                            
                         </ul>
                     </Col>
                 </Row>

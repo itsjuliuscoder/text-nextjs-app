@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { React, Fragment, useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Image from 'next/image';
@@ -6,9 +6,37 @@ import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import classes from './home.module.css';
-import { FaFacebookSquare, FaTwitter, FaLinkedin, FaInstagram  } from "react-icons/fa";
+import Carousel from "react-elastic-carousel";
+import { FaTwitter, FaLinkedin, FaInstagram  } from "react-icons/fa";
+import Item from "../item";
 
 function Home() {
+
+    // const item = [
+    //     "<p>Well over <b>1,334,810 KM</b> covered</p>",
+    //     "<p>0ver <b>1,950 trips</b> taken</p>",
+    //     "<p>More than <b>39,000 metric tons</b> distributed</p>",
+    // ]
+
+    const items = [
+        {
+            "name": "Well over 1,334,810 KM covered",
+        },
+        {
+            "name": "0ver 1,950 trips taken",
+        },
+        {
+            "name": "More than 39,000 metric tons distributed",
+        },
+        {
+            "name": "98.5% on-time delivery average",
+        }
+    ]
+    const [currentItem, setCurrentItem] = useState(0);
+    const onCurrentChange = current => {
+        setCurrentItem(current.index);
+    };
+
   return (
     <>
         <div className={classes.body_lower}>
@@ -23,13 +51,16 @@ function Home() {
             </Container>
         </div>
         <div className={classes.body}>
-            <Container>
-              <Row>
-                  <div className={classes.inner_body}>
-                    <p>Alles Charis Logistics (Abuja)        <span className={classes.bigText}>1500mT</span></p>
-                  </div>
-              </Row>
-            </Container>
+            <Carousel onNextEnd={onCurrentChange} onPrevEnd={onCurrentChange} showArrows={false} enableAutoPlay pagination={false}>
+                {items.map((item, i) => {
+                const className = currentItem === i ? "active" : "";
+                return (
+                    <Item key={item} className={className}>
+                    {item.name}
+                    </Item>
+                );
+                })}
+            </Carousel>
         </div>
         <div className={classes.body_values}>
             <Container>
@@ -120,7 +151,7 @@ function Home() {
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
                                 <h4 className={classes.footer_title}>Services</h4>
                                 <p className={classes.footer_para}>Operations</p>
-                                <p className={classes.footer_para}>Operations</p>
+                                <p className={classes.footer_para}>Station Locator</p>
                             </Col>
                             <Col xs={12} md={4}>
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />

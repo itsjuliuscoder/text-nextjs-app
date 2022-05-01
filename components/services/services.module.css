@@ -22,6 +22,14 @@
     position: relative;
     color: #fff;
 }
+.banner_text h3 {
+    font-family: "Nexa-Regular";
+}
+
+.banner_text p {
+    font-family: "Nexa-Light";
+}
+
 
 .inner_body {
     width: 65%;
@@ -127,8 +135,25 @@ p.text__right {
 .service_row {
     width: 100%;
     margin: 2em auto;
-
 }
+.service_row h2 {
+    font-family: "Nexa-Regular";
+}
+.service_row h5 {
+    font-weight: 900;
+    color: #170069;
+    font-family: "Nexa-Regular";
+}
+
+.services_rower h2 {
+    font-family: "Nexa-Regular";
+}
+
+.services_rower p {
+    font-family: "Nexa-Light";
+    font-size: 16px;
+}
+
 .service_row h3 {
     font-size: 32px;
     font-weight: 100;

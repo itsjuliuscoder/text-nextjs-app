@@ -1,13 +1,44 @@
 @font-face {
   font-family: "Nexa-Light";
   src: local("Nexa"),
-    url("../fonts/Nexa-Trial-Light.ttf");
+    url("../fonts/Nexa\ Light.otf");
 }
 
 @font-face {
+  font-family: "Gotham-Light";
+  src: local("Gotham"),
+    url("../fonts/Gotham/Gotham-Light.otf");
+}
+
+@font-face {
+  font-family: "Gotham-Regular";
+  src: local("Gotham"),
+    url("../fonts/Gotham/GothamMedium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: local("Poppins"),
+    url("../fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins"),
+    url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
   font-family: "Nexa-Regular";
   src: local("Nexa"),
-    url("../fonts/Nexa-Trial-Regular.ttf");
+    url("../fonts/NexaRegular.otf");
+}
+@font-face {
+  font-family: "QuietSans-Light";
+  src: local("QuietSans"),
+    url("../fonts/quiet-sans/Flatit\ \ QuietSansLight.otf");
+}
+@font-face {
+  font-family: "QuietSans-Regular";
+  src: local("QuietSans"),
+    url("../fonts/quiet-sans/Flatit\ \ QuietSansRegular.otf");
 }
 * {
   box-sizing: border-box;
@@ -18,7 +49,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  font-family: "Nexa-Light";
+  font-family: "Poppins-Light";
 }
 
 li {

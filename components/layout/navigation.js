@@ -11,7 +11,7 @@ function Navigation() {
     <header className={classes.header}>
       <Row>
         <Col xs={12} md={3}>
-            <Image src='/images/logo.png' alt="logo" className="mt-3" />
+            <Link href="/"><Image src='/images/logo.png' alt="logo" className="mt-3" /></Link>
         </Col>
         <Col xs={12} md={9}>
             <ul>

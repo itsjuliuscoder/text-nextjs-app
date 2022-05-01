@@ -1,8 +1,19 @@
 .body {
     background-color: #fff;
-    min-height: 211px;
+    min-height: 150px;
     padding: 9px;
     margin: auto;
+    font-family: "Gotham-Regular";
+}
+.title {
+    font-size: 3em;
+}
+.body h2 {
+    font-family: "Nexa-Regular";
+    font-weight: 600;
+}
+.body h4 {
+    font-weight: 900;
 }
 .body_values_inner h4 {
     font-weight: 900;
@@ -36,9 +47,20 @@
     margin: auto;
     padding: 3em;
 }
+.body_values h2 {
+    font-family: "Nexa-Regular";
+    font-weight: 700;
+}
 .body_values_inner {
     margin: 5em auto;
     position: relative;
+}
+.body_values_inner p {
+    font-size: 16px;
+}
+.body_values_inner h4 {
+    font-weight: 700;
+    font-family: "Nexa-Regular";
 }
 .body_lower_text {
     width: 75%;

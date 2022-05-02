@@ -1,10 +1,13 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import classes from './map.module.css';
-import FaMapMarkerAlt from 'react-icons/fa';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const LocationPin = ({ text }) => (
     <div className="pin">
+        <>
+        <FaMapMarkerAlt className={classes.pin_icon} />
+        </>
         <p className={classes.pin-text}>{text}</p>
     </div>
 )

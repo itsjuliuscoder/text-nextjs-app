@@ -18,8 +18,9 @@
     color: var(--main-blue);
 }
 
-.pin-icon {
-    font-size: 4rem;
+.pin_icon {
+    font-size: 2em;
+    color: rgb(229, 47, 84);
 }
 
 .pin-text {
@@ -40,7 +41,8 @@
         width: 15vw;
     }
 
-    .pin-icon {
-        font-size: 10vw;
+    .pin_icon {
+        font-size: 2em;
+        color: rgb(229, 47, 84);
     }
 }

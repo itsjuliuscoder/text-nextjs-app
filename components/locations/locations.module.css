@@ -1,0 +1,197 @@
+.body {
+    background-color: #fff;
+    min-height: 400px;
+    padding: 9px;
+    margin: auto;
+}
+
+.banner {
+    background: url('../../public/images/locations.png');  
+    background-size: cover;
+    padding: 9px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner_text {
+    margin-top: 14em !important;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.banner_text h3 {
+    font-family: "Nexa-Regular";
+}
+
+.banner_text p {
+    font-family: "Nexa-Light";
+}
+
+
+.inner_body {
+    width: 65%;
+    position: relative;
+    margin: 3em auto;
+}
+.body_lower {
+    background-color: #ACBDC3;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 3em;
+}
+.body_values {
+    background-color: #F2F2F2;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 3em;
+}
+.body_lower_text {
+    width: 75%;
+    margin: 3em auto;
+    position: relative;
+    color: #fff;
+}
+.body_row {
+    width: 80%;
+    margin: 2em auto;
+    position: relative;
+}
+.body_row_left {
+    margin: 2em auto;
+    position: relative;
+    width: 100%;
+}
+.mapTitle {
+    margin: 1em auto;
+}
+.mapTitle h3 {
+    font-family: "Nexa-Regular";
+    font-weight: 900;
+}
+span.bigText {
+    font-size: 32px;
+    font-weight: 600;
+    color: #170069;
+}
+span.colored {
+    color: #26AFE6;
+}
+.col_body {
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 2em;
+}
+.team_banner {
+    background: url("../../public/images/bg.png");
+    padding: 22px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.team_banner h4 {
+    font-size: 28px;
+    margin: 1em auto;
+}
+.product_section {
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    padding: 22px;
+}
+.button {
+    background-color: #75B9D5;
+    color: #fff;
+    width: 25%;
+    margin: auto;
+    left: 30%;
+    border: none;
+    position: relative;
+    float: right !important;
+}
+.footer_section {
+    background-color: #C4C4C4;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+ul.footer_list_left {
+    margin: 0;
+    padding: 0;
+}
+ul.footer_list_left li {
+    display: inline;
+    color: #170069;
+    text-align: center;
+    padding: 12px 14px;
+}
+ul.footer_list_left li a {
+    text-decoration: none;
+}
+ul.footer_list_right {
+    margin: 0;
+    padding: 0;
+    list-style: circle !important;
+    float: right;
+}
+ul.footer_list_right li {
+    display: inline;
+    color: #170069;
+    text-align: center;
+    padding: 12px 14px;
+}
+.footer_section_lower {
+    background: #3D3D3D;
+    width: 100%;
+    margin: auto;
+    min-height: 50px;
+    color: #fff;
+    padding-top: 1em;
+}
+.footer_section_upper {
+    background-color: #EAEAEA;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+p.text__right {
+    text-align: right;
+}
+.service_row {
+    width: 100%;
+    margin: 2em auto;
+}
+.service_row h2 {
+    font-family: "Nexa-Regular";
+}
+.service_row h5 {
+    font-weight: 900;
+    color: #170069;
+    font-family: "Nexa-Regular";
+}
+
+.services_rower h2 {
+    font-family: "Nexa-Regular";
+}
+
+.services_rower p {
+    font-family: "Nexa-Light";
+    font-size: 16px;
+}
+
+.service_row h3 {
+    font-size: 32px;
+    font-weight: 100;
+}
+.service_row h5 {
+    font-size: 16px;
+    line-height: 32px;
+    color: #170069;
+}

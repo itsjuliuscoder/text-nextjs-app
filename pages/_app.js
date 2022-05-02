@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  if((router.pathname.startsWith("/about")) || (router.pathname.startsWith("/contact")) || (router.pathname.startsWith("/team")) || (router.pathname.startsWith("/service"))){
+  if((router.pathname.startsWith("/about")) || (router.pathname.startsWith("/contact")) || (router.pathname.startsWith("/team")) || (router.pathname.startsWith("/service")) || (router.pathname.startsWith("/locations"))){
     return (
       <Layout>
         <Head>

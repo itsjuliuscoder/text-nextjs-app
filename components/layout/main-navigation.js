@@ -17,7 +17,7 @@ function MainNavigation() {
             <ul>
               <li><Link href="/about">ABOUT US</Link></li>
               <li><Link href="/service">SERVICES</Link></li>
-              <li><Link href="">LOCATIONS</Link></li>
+              <li><Link href="/locations">LOCATIONS</Link></li>
               <li><Link href="">BLOG & MEDIA</Link></li>
               <li><Link href="/contact">CONTACT</Link></li>
             </ul>

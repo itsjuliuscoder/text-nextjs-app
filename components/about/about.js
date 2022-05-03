@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
 import classes from './about.module.css';
-import { FaFacebookSquare, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function About() {
   return (

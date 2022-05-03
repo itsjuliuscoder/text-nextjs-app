@@ -65,7 +65,7 @@ function Home() {
         <div className={classes.body_values}>
             <Container>
                 <Row>
-                    <h2 className="text-center">About Us</h2>
+                    <h2 className="text-center mt-4">About Us</h2>
                 </Row>
                 <Row className={classes.body_values_inner}>
                     <Col xs={12} md={6}>
@@ -83,10 +83,10 @@ function Home() {
         <div className={classes.body}>
             <Container>
                 <Row className='mt-3'>
-                    <h2 className="text-center">What We Do</h2>
+                    <h2 className="text-center mt-4">What We Do</h2>
                 </Row>
                 <Row className={classes.body_values_inner}>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={6} className={classes.body_values_inner_text}>
                         <h4>PRODUCTION</h4>
                         <p>With industry expertise and experience we have created a partnership with GREEN ENERGY INTERNATIONAL LIMITED to produce LPG and propane cylinder. This allows us to be a key player in the production phase of LPG.</p>
                     </Col>
@@ -98,7 +98,7 @@ function Home() {
                     <Col xs={12} md={6}>
                         <Image src='/images/icon.png' width="494" height="281" alt="image icon" />                        
                     </Col>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={6} className={classes.body_values_inner_text}>
                         <h4>DISTRIBUTION</h4>
                         <p>With industry certified Bridgers we intend to carry LPG from the production field to our different storage facility across the country. We will also help our clients carry from coastal or inland facilities over long distances. Our 
                         Bob-Tails will be used for short distance distribution and logistics.
@@ -106,7 +106,7 @@ function Home() {
                     </Col>
                 </Row>
                 <Row className={classes.body_values_inner}>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={6} className={classes.body_values_inner_text}>
                         <h4>STORAGE</h4>
                         <p>We have built storage facilities across the nation to ease the distribution of LPG. Adherence to safety standards and in time delivery will ensure customer satisfaction.</p>
                     </Col>
@@ -118,7 +118,7 @@ function Home() {
                     <Col xs={12} md={6}>
                         <Image src='/images/icon.png' width="494" height="281" alt="image icon" />                        
                     </Col>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={6} className={classes.body_values_inner_text}>
                         <h4>RETAIL</h4>
                         <p>To be truly end to end, we will serve end users for personal or commercial use. The satisfaction of the end user is our goal.</p>
                     </Col>
@@ -132,7 +132,7 @@ function Home() {
                     <p>Alles Charis Gas limited was founded in February 2018, to close the vacuum that could be found in the supply chain of the gas industry in Nigeria.
                     This means that the company fulfils the needs of every level of consumer that may need gas products by offering a range of products and services from bulk sales, logistics, storage, wholesale, retail, project management and installations of engineering equipment.</p>
                     {/* <Link href="#" className="btn btn-default mt-2">Welcome</Link> */}
-                    <button style={{ width: '15%', backgroundColor: '#84B4C8', marginLeft: '8px' }} type="button" className='btn btn-md mt-2'><a target="_blank" rel="noopener" href="/assets/alles_charis_company_profile.pdf">Company Profile</a></button>
+                    <button style={{ width: '15%', backgroundColor: '#84B4C8', marginLeft: '8px', fontFamily: 'Nexa', fontWeight: '700' }} type="button" className='btn btn-md mt-2'><a target="_blank" rel="noopener" href="/assets/alles_charis_company_profile.pdf">Company Profile</a></button>
                 </Row>
             </Container>
         </div>
@@ -169,10 +169,10 @@ function Home() {
                 <Row className="mt-3">
                     <Col xs={12} md={5}>
                         <ul className={classes.footer_list_left}>
-                            <li>Contact Us</li>
-                            <li>Gallery</li>
-                            <li>Careers</li>
-                            <li>Services</li>
+                            <li><Link href="/contact" passHref>Contact Us</Link></li>
+                            <li><Link href="/gallery" passHref>Gallery</Link></li>
+                            <li><Link href="">Careers</Link></li>
+                            <li><Link href="/services" passHref>Services</Link></li>
                         </ul>
                     </Col>
                     <Col xs={12} md={7}>

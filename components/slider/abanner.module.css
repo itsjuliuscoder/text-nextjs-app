@@ -12,6 +12,13 @@
 }
 .banner_text h3 {
     font-family: 'Nexa-Regular';
+    font-size: 60px;
+}
+.banner_text p {
+    font-family: 'Poppins-Light';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
 }
 .btnStyle {
     background-color: #84B4C8;
@@ -19,6 +26,7 @@
     width: 30%;
     border: none;
     padding: 9px;
+    font-family: 'Nexa-Regular';
 }
 .btnStyle:hover {
     background-color: #84B4C8;

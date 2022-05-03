@@ -20,7 +20,7 @@
 
 .header li a {
   display: block;
-  color: #170069;
+  color: #26AFE6 !important;
   text-align: center;
   padding: 12px 14px;
   text-decoration: none;
@@ -28,7 +28,7 @@
 }
 
 .header a {
-  color: #170069;
+  color: #26AFE6 !important   ;
   font-size: 12px;
 }
 

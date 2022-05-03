@@ -17,6 +17,25 @@
 }
 .body_values_inner h4 {
     font-weight: 900;
+    font-family: 'Nexa-Regular';
+}
+.body_values_inner p {
+    font-family: 'Poppins-Regular';
+}
+.body_values_inner_text {
+    margin: 6em auto;
+    position: relative;
+}
+.body_values_inner_text h4 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 28px;
+}
+.body_values_inner_text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Poppins-Regular';
 }
 .inner_body {
     width: 65%;
@@ -68,6 +87,12 @@
     position: relative;
     color: #fff;
 }
+.body_lower_text p {
+    font-family: 'Nexa-Regular';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
 span.bigText {
     font-size: 32px;
     font-weight: 600;
@@ -82,6 +107,13 @@ span.colored {
     margin: auto;
     padding: 2em;
 }
+.body h2 {
+    font-family: 'Nexa-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 28px;
+}
 .team_banner {
     background: url("../../public/images/bg.png");
     padding: 22px;
@@ -91,8 +123,20 @@ span.colored {
     color: #fff;
 }
 .team_banner h4 {
-    font-size: 28px;
     margin: 1em auto;
+    font-style: normal;
+    font-family: 'Nexa-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 28px;
+}
+.team_banner p {
+    font-family: 'Nexa-Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 .team_banner a {
     color: #000;
@@ -104,6 +148,19 @@ span.colored {
     position: relative;
     width: 100%;
     padding: 22px;
+}
+.product_section p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 51px;
+}
+.product_section h4 {
+    font-family: 'Nexa-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 51px;
+    color: #1F1F1F;
 }
 .footer_section {
     background-color: #C4C4C4;
@@ -118,18 +175,22 @@ ul.footer_list_left {
 }
 ul.footer_list_left li {
     display: inline;
-    color: #170069;
+    color: #000000;
     text-align: center;
     padding: 12px 14px;
 }
 ul.footer_list_left li a {
     text-decoration: none;
+    color: #000000;
 }
 ul.footer_list_right {
     margin: 0;
     padding: 0;
     list-style: circle !important;
     float: right;
+}
+ul.footer_list_right li a {
+    color: #000000;
 }
 ul.footer_list_right li {
     display: inline;
@@ -138,14 +199,17 @@ ul.footer_list_right li {
     font-size: 18px;
     padding: 12px 14px;
 }
+
 .btnStyle {
     background-color: #84B4C8;
     color: #fff;
     width: 20%;
     border: none;
+    font-family: 'Nexa-Regular';
+    margin: 7px auto;
 }
 .footer_section_lower {
-    background: #3D3D3D;
+    background: #3D3D3D !important;
     width: 100%;
     margin: auto;
     min-height: 50px;

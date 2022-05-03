@@ -85,12 +85,18 @@ span.colored {
   width: 100%;
   padding: 22px;
 }
-.footer_section_upper {
-  background-color: #EAEAEA;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  padding: 15px;
+.product_section p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 51px;
+}
+.product_section h4 {
+  font-family: 'Nexa-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 51px;
+  color: #1F1F1F;
 }
 .footer_section {
   background-color: #C4C4C4;
@@ -105,12 +111,13 @@ ul.footer_list_left {
 }
 ul.footer_list_left li {
   display: inline;
-  color: #170069;
+  color: #000000;
   text-align: center;
   padding: 12px 14px;
 }
 ul.footer_list_left li a {
   text-decoration: none;
+  color: #000000;
 }
 ul.footer_list_right {
   margin: 0;
@@ -118,14 +125,27 @@ ul.footer_list_right {
   list-style: circle !important;
   float: right;
 }
+ul.footer_list_right li a {
+  color: #000000;
+}
 ul.footer_list_right li {
   display: inline;
-  color: #170069;
+  color: #000;
   text-align: center;
+  font-size: 18px;
   padding: 12px 14px;
 }
+
+.btnStyle {
+  background-color: #84B4C8;
+  color: #fff;
+  width: 20%;
+  border: none;
+  font-family: 'Nexa-Regular';
+  margin: 7px auto;
+}
 .footer_section_lower {
-  background: #3D3D3D;
+  background: #3D3D3D !important;
   width: 100%;
   margin: auto;
   min-height: 50px;

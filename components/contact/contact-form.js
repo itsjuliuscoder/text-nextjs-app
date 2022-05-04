@@ -34,7 +34,7 @@ function ContactForm() {
                 <Row>
                   <Col xs={12} md={8}>
                     <h4>Contact Details</h4>
-                    <Row>
+                    <Row className='mt-4'>
                       <Col xs={12} md={1} className="mt-2">
                           <FiMapPin className={classes.icon_style} />
                       </Col>
@@ -126,44 +126,21 @@ function ContactForm() {
                 </Row>
             </Container>
         </div>
-        <div className={classes.footer_section_upper}>
-            <Container>
-                <Row className="mt-3">
-                    <Col xs={12} md={4}>
-                        <h4>About Us</h4>
-                        <p>Olusegun Adegbulugbe</p>
-                        <p>Our Team</p>
-                    </Col>
-                    <Col xs={12} md={4}>
-                        <h4>Services</h4>
-                        <p>Operations</p>
-                        <p>Station Locator</p>
-                    </Col>
-                    <Col xs={12} md={4}>
-                        <h4>Contact</h4>
-                        <p>Contact Details</p>
-                        <p>Career Opportunities</p>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
         <div className={classes.footer_section}>
             <Container>
                 <Row className="mt-3">
                     <Col xs={12} md={5}>
                         <ul className={classes.footer_list_left}>
-                            <li>Contact Us</li>
-                            <li>Gallery</li>
-                            <li>Careers</li>
-                            <li>Gallery</li>
+                            <li><Link href="/contact" passHref>Contact Us</Link></li>
+                            <li><Link href="/gallery" passHref>Gallery</Link></li>
+                            <li><Link href="">Careers</Link></li>
+                            <li><Link href="/services" passHref>Services</Link></li>
                         </ul>
                     </Col>
                     <Col xs={12} md={7}>
                         <ul className={classes.footer_list_right}>
                             <li>
-                               <li>
                                 <Link href="https://instagram.com/allescharis" passHref><a target="_blank" rel="noopener"><FaInstagram /></a></Link>
-                            </li>
                             </li>
                             <li>
                                 <Link href="https://twitter.com/allescharis" passHref><a target="_blank" rel="noopener"><FaTwitter /></a></Link>

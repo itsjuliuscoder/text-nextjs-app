@@ -65,7 +65,7 @@ function Home() {
         <div className={classes.body_values}>
             <Container>
                 <Row>
-                    <h2 className="text-center mt-4">About Us</h2>
+                    <h2 className="text-center mt-4" style={{ fontSize: '48px' }}>About Us</h2>
                 </Row>
                 <Row className={classes.body_values_inner}>
                     <Col xs={12} md={6}>

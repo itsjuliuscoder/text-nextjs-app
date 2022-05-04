@@ -118,7 +118,7 @@ function About() {
                     <h4>Management Team</h4>
                     <p>With a world-class team of visionaries with records in leadership and problem solving, the company has great mind assets always focused on breaking new ground with both long and short term goals.</p>
                     {/* <Link href="#" className="btn btn-default mt-2">Welcome</Link> */}
-                    <Link href="/team" passHref={true}><button style={{ width: '15%', backgroundColor: '#84B4C8' }} className='btn btn-md mt-2 textDec'>Meet the Team</button></Link>
+                    <Link href="/team" passHref={true}><button style={{ width: '15%', backgroundColor: '#84B4C8', fontFamily: 'Nexa-Regular', fontWeight: '700', fontSize: '20px' }} className='btn btn-md mt-2 textDec pt-2'>Meet the Team</button></Link>
                 </Row>
             </Container>
         </div>
@@ -128,12 +128,12 @@ function About() {
                     <Container>
                         <Row className="mt-3">
                             <h4 className='mb-3'>Products</h4>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={4} className="mt-3">
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
                                 <h5 className='mt-3'>Our Stations</h5>
                                 <p className='mt-2'>Need gas? With storage facilities of over 1500 tonnes, check out our <span className={classes.colored}>Station Locator</span> to find the nearest station to you.</p>
                             </Col>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={4} className="mt-3">
                                 <Image src='/images/col_img.png' width="420" height="420" alt="Column Image" />
                                 <h5 className='mt-3'>Company Profile</h5>
                                 <p className='mt-2'>Interested in our story, read our <span className={classes.colored}>Company Profile</span> to find out more or <span className={classes.colored}>Contact Us.</span></p>
@@ -153,10 +153,10 @@ function About() {
                 <Row className="mt-3">
                     <Col xs={12} md={5}>
                         <ul className={classes.footer_list_left}>
-                            <li>Contact Us</li>
-                            <li>Gallery</li>
-                            <li>Careers</li>
-                            <li>Services</li>
+                            <li><Link href="/contact" passHref>Contact Us</Link></li>
+                            <li><Link href="/gallery" passHref>Gallery</Link></li>
+                            <li><Link href="">Careers</Link></li>
+                            <li><Link href="/services" passHref>Services</Link></li>
                         </ul>
                     </Col>
                     <Col xs={12} md={7}>

@@ -145,6 +145,11 @@ p.text__right {
     font-family: "Nexa-Regular";
 }
 
+.services_rower {
+    margin: 2em auto;
+    position: relative;
+}
+
 .services_rower h2 {
     font-family: "Nexa-Regular";
 }

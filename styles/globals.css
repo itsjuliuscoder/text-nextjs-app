@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "Nexa-Bold";
+  src: local("Nexa"),
+    url("../fonts/Nexa\ Bold.otf");
+}
+
+@font-face {
   font-family: "Gotham-Light";
   src: local("Gotham"),
     url("../fonts/Gotham/Gotham-Light.otf");
@@ -44,8 +50,8 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Nexa-Light";
+h1, h2, h3 {
+  font-family: "Nexa-Bold";
 }
 
 p {

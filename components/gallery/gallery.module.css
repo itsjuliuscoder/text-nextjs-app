@@ -19,6 +19,19 @@
     color: #fff;
 }
 
+.banner_text h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 28px;
+    font-family: 'Nexa-Light' !important;
+}
+.banner_text p {
+    font-family: 'Poppins-Light';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+}
 .inner_body {
     width: 65%;
     position: relative;

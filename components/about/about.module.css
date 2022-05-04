@@ -61,8 +61,19 @@ span.colored {
     color: #fff;
 }
 .team_banner h4 {
-    font-size: 28px;
     margin: 1em auto;
+    font-family: 'Nexa-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 28px;
+}
+.team_banner p {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 .product_section {
     background-color: #fff;
@@ -70,6 +81,20 @@ span.colored {
     position: relative;
     width: 100%;
     padding: 22px;
+}
+.product_section h4 {
+    font-family: 'Nexa-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 28px;
+}
+.product_section h5 {
+    font-family: 'Nexa-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
 }
 .footer_section {
     background-color: #C4C4C4;
@@ -84,12 +109,13 @@ ul.footer_list_left {
 }
 ul.footer_list_left li {
     display: inline;
-    color: #170069;
+    color: #000000;
     text-align: center;
     padding: 12px 14px;
 }
 ul.footer_list_left li a {
     text-decoration: none;
+    color: #000000;
 }
 ul.footer_list_right {
     margin: 0;
@@ -97,10 +123,14 @@ ul.footer_list_right {
     list-style: circle !important;
     float: right;
 }
+ul.footer_list_right li a {
+    color: #000000;
+}
 ul.footer_list_right li {
     display: inline;
-    color: #170069;
+    color: #000;
     text-align: center;
+    font-size: 18px;
     padding: 12px 14px;
 }
 .footer_section_lower {

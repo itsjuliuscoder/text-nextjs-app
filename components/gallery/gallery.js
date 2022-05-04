@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Col from 'react-bootstrap/Col';
 import classes from './gallery.module.css';
-import { FaFacebookSquare, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Gallery() {
   return (
@@ -59,7 +59,7 @@ function Gallery() {
                 <Row className="mt-3">
                     <Col xs={12} md={4}>
                         <h4>About Us</h4>
-                        <p>Olusegun Adegbulugbe</p>
+                        <p>Who We Are</p>
                         <p>Our Team</p>
                     </Col>
                     <Col xs={12} md={4}>
@@ -80,18 +80,16 @@ function Gallery() {
                 <Row className="mt-3">
                     <Col xs={12} md={5}>
                         <ul className={classes.footer_list_left}>
-                            <li>Contact Us</li>
-                            <li>Gallery</li>
-                            <li>Careers</li>
-                            <li>Gallery</li>
+                            <li><Link href="/contact" passHref>Contact Us</Link></li>
+                            <li><Link href="/gallery" passHref>Gallery</Link></li>
+                            <li><Link href="">Careers</Link></li>
+                            <li><Link href="/services" passHref>Services</Link></li>
                         </ul>
                     </Col>
                     <Col xs={12} md={7}>
                         <ul className={classes.footer_list_right}>
                             <li>
-                               <li>
                                 <Link href="https://instagram.com/allescharis" passHref><a target="_blank" rel="noopener"><FaInstagram /></a></Link>
-                            </li>
                             </li>
                             <li>
                                 <Link href="https://twitter.com/allescharis" passHref><a target="_blank" rel="noopener"><FaTwitter /></a></Link>

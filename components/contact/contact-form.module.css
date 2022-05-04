@@ -9,6 +9,22 @@
   font-weight: 700;
 }
 
+.body h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 51px;
+  color: #170069;
+  font-family: 'Nexa-Light';
+}
+
+.body h4 {
+  font-family: 'Nexa-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51px;
+}
+
 .banner {
   background-image: 
             linear-gradient(89.82deg, 
@@ -86,17 +102,19 @@ span.colored {
   padding: 22px;
 }
 .product_section p {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 51px;
+  font-family: 'Nexa-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #323232;
 }
-.product_section h4 {
+.product_section h5 {
   font-family: 'Nexa-Light';
   font-style: normal;
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 51px;
-  color: #1F1F1F;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
 }
 .footer_section {
   background-color: #C4C4C4;
@@ -165,6 +183,14 @@ p.text__right {
   box-sizing: border-box;
   border-radius: 7px;
   padding: 8px;
+}
+.formGroup h5 {
+  color: #1F1F1F;
+  font-family: 'Nexa-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
 }
 .formGroup input[type="submit"] {
   width: 30%;
